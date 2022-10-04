@@ -139,11 +139,36 @@ select {
 */
 
 @media only screen and (max-width: 600px) {
+  header,
   form {
-    min-height: 10vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  header {
+    font-size: 1.5rem;
+  }
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: white;
+  }
+  .todo-ib {
+    display: flex;
+  }
+  .todo-list {
+    min-width: 20%;
+    list-style: none;
+    padding: 0.5rem;
+  }
+  .select {
+    width: 10rem;
+  }
+  .filter-todo {
+    padding: 0.8rem;
   }
 }
